@@ -1,8 +1,17 @@
+'''
+Get text contents of emails, process them.
+Count the occurrence of every word in these text contents.
+Filter some high-frequency words.
+Makes use of Porter Stemmer Algo., whose original source code is got
+the founder's site
+'''
+
 import re
 import Port_stem
 from emailFileProcessor import emailParser
 
 # Drop these words because they are meaningless.
+# Actually, we can also call it stopword list
 dropList = ['an', 'the', 'in', 'of', 'on', 'to',
                 'as', 'for', 'it', 'that', 'this', 'those', 'these', 'by', 'is', 'are', 'was', 'were', 'be', 'being',
                 'you', 'and', 'with', 'do','did','q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f',

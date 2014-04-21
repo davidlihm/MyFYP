@@ -1,3 +1,9 @@
+'''
+Email Parser
+Collect all text files (or all .eml files) in one given folder,
+then parse them, return every email's "Subject" and "Payload"
+'''
+
 import os
 import email.parser
 
@@ -48,10 +54,7 @@ def parseAll(path, func):
         func(content)
 
 
-def test(path='D:\\Study\\FYP\\project'):
-    files = getEmailFiles(path)
-    for i in range(len(files)):
-        file = emailParser(files[i])
+
 
 
 def test1(path='D:\\Study\\FYP\\project'):

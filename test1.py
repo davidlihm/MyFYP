@@ -1,4 +1,9 @@
-__author__ = 'User'
+'''
+One of the test program, try different thresholds.
+An fast test with only testing 0.25, 0.5, 0.75 and 1
+Almost the same with test2.py
+
+'''
 import database
 from emailFileProcessor import getEmailFiles, emailParser
 from textProcessor import getEmailContents
@@ -18,7 +23,7 @@ ham_files = getEmailFiles(ham_path2)
 #count_correct = [0,0,0,0]
 
 
-def compute(word_list, factor=0.9, threshold=0.5):
+def compute(word_list, factor=0.9, threshold=0.6):
     '''Pass in a list of words
         Calculate the prob. of being spam
         isHam : The tested dataset is a Ham set

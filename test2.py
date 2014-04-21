@@ -1,4 +1,8 @@
-__author__ = 'User'
+'''
+Detailed test program.
+Tested threshold [0.05, 0.10, 0.15 ... 0.95, 1.00]
+
+'''
 import database
 from emailFileProcessor import getEmailFiles, emailParser
 from textProcessor import getEmailContents

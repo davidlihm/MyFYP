@@ -1,3 +1,8 @@
+'''
+Classifier training
+Record occurrence of every word.
+'''
+
 from textProcessor import *
 import database
 from emailFileProcessor import *
@@ -5,13 +10,13 @@ from result import *
 # Make use of database 1.
 
 
-#train_path = 'D:\\Dropbox\\FYP\\project\\CSDMC2010_SPAM\\TRAINING'
-train_ham1 = 'D:\\David\\SomeData\\data\\easy_ham_2'
-train_ham2 = 'D:\\David\\SomeData\\data\\easy_ham'
-train_spam1 = 'D:\\David\\SomeData\\data\\spam_2'
-train_spam2 = 'D:\\David\\SomeData\\data\\spam'
+#train_path = #path of training dataset
+#train_ham1 = #path of training dataset
+#train_ham2 = #path of training dataset
+#train_spam1 = #path of training dataset
+#train_spam2 = #path of training dataset
 
-#train_spam3 = 'D:\\David\\SomeData\\spam\\spam4'
+#train_spam3 = #path of training dataset
 
 def train_with_path(train_path, isHam):
     conn = database.getDBConnect()
@@ -44,9 +49,9 @@ def train_with_path(train_path, isHam):
 
 if __name__ == "__main__":
 
-    train_with_path(train_ham1, True)
+    #train_with_path(train_ham1, True)
     #train_with_path(train_spam, False)
     #train_with_path(train_spam, False) #TRAINED
-    train_with_path(train_ham2, True)  #TRAINED
-    train_with_path(train_spam2, False)
-    train_with_path(train_spam1, False)
+    #train_with_path(train_ham2, True)  #TRAINED
+    #train_with_path(train_spam2, False)
+    #train_with_path(train_spam1, False)

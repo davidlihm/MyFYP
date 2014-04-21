@@ -1,4 +1,10 @@
-__author__ = 'User'
+'''
+The test program that used in the Tornado website.
+Only for my demo in final presentation.
+The web application receives an email's text content and then pass
+them to this program to process.
+AFter that, return the result and display on web page.
+'''
 import database
 from emailFileProcessor import getEmailFiles, emailParser
 from textProcessor import getOriEmailContents

@@ -1,3 +1,7 @@
+'''
+This program is for building and interact with a database 
+"""
+
 import sqlite3
 
 database_path = 'D:\\Dropbox\\FYP\\project\\database.db'

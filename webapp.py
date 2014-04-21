@@ -1,4 +1,7 @@
-__author__ = 'User'
+'''
+A very simple web application only for my demo.
+Because I have no enough time to design GUI of client.
+'''
 
 import tornado.ioloop
 import tornado.web

@@ -1,3 +1,9 @@
+'''
+This program is only used in getting CSDMC dataset's training result.
+Faked the original python program attached in that dataset.
+Now, it is useless
+'''
+# Please modify the path manually
 resultPath = "D:\\Dropbox\\FYP\\project\\CSDMC2010_SPAM\\SPAMTrain.label"
 resultPathTest = "D:\\Dropbox\\FYP\\project\\t\\label.txt"
 
