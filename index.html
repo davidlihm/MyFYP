@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>Spam email filter</title>
+    <link href='{{ static_url("css/bootstrap.min.css")}}' rel="stylesheet">
+    <link href='{{ static_url("css/site.min.css")}}' rel="stylesheet">
+     <link rel="shortcut icon" href='{{ static_url("favicon.ico")}}'>
+    <style>
+        .btn-lg{padding:30px 50px;
+                font-size:40px;
+        }
+        #logo{
+            padding-top:40px;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+           <div id="myCarousel" class="carousel slide">
+      <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
+      <div class="carousel-inner">
+        <div id='h' class="item active masthead">
+          <div class="masthead-bg"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Spam Email Filter</h1>
+              <h2>Final year project of Li Haoming (P1007767)</h2>
+              <p>
+                <a class="btn btn-lg btn-primary  bs3-link" href="/editor" target="_blank" role="button">Let's start!</a>
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+          <div id="logo"><img src='{{ static_url("logo.jpg")}}'/> </div>
+      </div>
+      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    </div>
+
+</body>
+</html>
+

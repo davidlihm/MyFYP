@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<title>Result</title>
+		<link href='{{ static_url("css/bootstrap.min.css") }}' rel="stylesheet">
+    	<link href='{{ static_url("css/site.min.css") }}' rel="stylesheet">
+     	<link rel="shortcut icon" href='{{ static_url("favicon.ico") }}'>
+     	<script src='{{ static_url("js/jquery.min.js") }}'></script>
+     	<script type='text/javascript' src='{{ static_url("js/jquery.highlight-4.js") }}'></script>
+     	<style>
+     	.highlight { background-color: yellow }
+     	.container {width:980px;}
+     	</style>
+     	<script type="text/javascript">
+		var si = "{{ subject }}"
+		var pa = "{{ payload }}"
+		var ih = {{ isHam }}
+		var pr = {{ prob }}
+		console.log(si)
+		console.log(pa)
+		console.log(ih)
+		console.log(pr)		
+	</script>
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			<h3 id='subject' class='tohighlight'>{{ subject }}</h3>
+			
+			<p class="text-left tohighlight">
+				<em>{{ payload }}</em>
+			</p>
+			<p class="text-right">
+				<em>The probability of this email being spam is {{ prob }}</em>
+			</p>
+			<p class="text-right">
+				<em>This email may be a 
+					{% if isHam == 1 %} 
+					normal email
+					{% else %} SPAM email
+					{% end %} </em>
+			</p>
+		</div>
+	<script type="text/javascript">
+			{% for word in risk_set %}
+				console.log('{{ word }}')
+				$('.tohighlight').highlight(' {{ word }} ')
+				
+				{% end %}
+	</script>
+
+	</body>
+</html>
